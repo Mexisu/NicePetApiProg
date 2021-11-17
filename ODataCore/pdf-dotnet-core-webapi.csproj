@@ -1,0 +1,10 @@
+﻿using System;
+namespace Nicepet_API
+{
+	public class pdf_dotnet_core_webapi
+	{
+		public pdf_dotnet_core_webapi()
+		{
+		}
+	}
+}

@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  nicepet_api:
+    image: ${DOCKER_REGISTRY-}nicepetapi
+    build:
+      context: .
+      dockerfile: ODataCore/Dockerfile

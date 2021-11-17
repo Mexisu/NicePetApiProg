@@ -1,0 +1,50 @@
+﻿@model List<Nicepet_API.Models.Customer>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Customer</h2>
+        <p>Customer Details</p>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>CustomerID</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Country</th>
+                    <th>City</th>
+                    <th>Phoneno</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.CustomerID</td>
+                        <td>@item.Name</td>
+                        <td>@item.Address</td>
+                        <td>@item.Country</td>
+                        <td>@item.City</td>
+                        <td>@item.Phoneno</td>
+                    </tr>
+
+                }
+
+            </tbody>
+        </table>
+    </div>
+</body>
+</html> 
